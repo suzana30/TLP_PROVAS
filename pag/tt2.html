@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Trimestre</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #ffe6f0; /* rosa claro */
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: #d6336c; /* rosa escuro */
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #f783ac; /* rosa médio */
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ff85c1;
+      color: #000;
+    }
+
+    main {
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .trim {
+      background: #ffffff;
+      max-width: 800px;
+      width: 100%;
+      padding: 50px 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(214, 51, 108, 0.25);
+      text-align: justify;
+    }
+
+    .trim h1 {
+      color: #d6336c;
+      text-align: center;
+    }
+
+    .ab p {
+      color: #4a0a3e;
+      line-height: 1.6;
+    }
+
+    .ab strong {
+      color: #d6336c;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1><a href="../index.html">HOME</a></h1>
+
+  <nav>
+    <a href="trimestre1.html">I Trim.</a>
+    <a href="trimestre2.html">II Trim.</a>
+    <a href="trimestre3.html">III Trim.</a>
+  </nav>
+</header>
+
+<main>
+  <div class="trim">
+
+    <div class="ab">
+      <h1>SINTAXE BÁSICA DO CSS E SELETORES</h1><br>
+
+      <p><strong>1. Sintaxe Básica do CSS</strong></p><br>
+
+      <p>
+        O CSS é escrito através de regras de estilo.
+        Cada regra é composta por um seletor e um bloco de declarações.
+        O seletor indica qual elemento HTML será estilizado,
+        enquanto as declarações definem como esse elemento irá aparecer.
+      </p><br>
+
+      <p><strong>Estrutura básica de uma regra CSS:</strong></p><br>
+
+      <p>
+        seletor { <br>
+        &nbsp;&nbsp;propriedade: valor; <br>
+        }
+      </p><br>
+
+      <p>
+        Exemplos do que compõe a sintaxe do CSS:<br>
+        • Seletor – escolhe o elemento HTML;<br>
+        • Propriedade – define o que será alterado;<br>
+        • Valor – indica como será a alteração;<br>
+        • Cada declaração termina com ponto e vírgula (;).<br>
+      </p><br>
+    </div>
+
+    <div class="ab"><br>
+      <p><strong>2. Seletores Simples em CSS</strong></p><br>
+
+      <p>
+        Os seletores são usados para indicar quais elementos HTML receberão estilo.
+        Os principais seletores simples são:
+      </p><br>
+
+      <p>
+        • Seletor de elemento (tag);<br>
+        • Seletor de classe;<br>
+        • Seletor de ID;<br>
+        • Seletor universal.<br>
+      </p><br>
+    </div>
+
+    <div class="ab"><br>
+      <p><strong>3. Tipos de Seletores Simples</strong></p><br>
+
+      <p><strong>3.1 Seletor de Elemento</strong></p><br>
+
+      <p>
+        O seletor de elemento utiliza o nome da tag HTML
+        e aplica o estilo a todos os elementos desse tipo.
+      </p><br>
+
+      <p>
+        p { <br>
+        &nbsp;&nbsp;color: blue; <br>
+        }
+      </p><br>
+
+      <p>
+        • Aplica o estilo a todas as tags iguais;<br>
+        • Baixa prioridade;<br>
+        • Muito utilizado.<br>
+      </p><br>
+    </div>
+
+    <div class="ab"><br>
+      <p><strong>3.2 Seletor de Classe</strong></p><br>
+
+      <p>
+        O seletor de classe é identificado por um ponto (.)
+        e permite aplicar estilos a vários elementos.
+      </p><br>
+
+      <p>
+        .texto { <br>
+        &nbsp;&nbsp;font-size: 18px; <br>
+        }
+      </p><br>
+
+      <p>
+        • Reutilizável;<br>
+        • Usa ponto (.);<br>
+        • Muito comum.<br>
+      </p><br>
+    </div>
+
+    <div class="ab"><br>
+      <p><strong>3.3 Seletor de ID</strong></p><br>
+
+      <p>
+        O seletor de ID utiliza o símbolo #
+        e identifica um único elemento.
+      </p><br>
+
+      <p>
+        #principal { <br>
+        &nbsp;&nbsp;background-color: lightgray; <br>
+        }
+      </p><br>
+
+      <p>
+        • Único na página;<br>
+        • Usa #;<br>
+        • Maior prioridade.<br>
+      </p>
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>

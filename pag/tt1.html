@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Trimestre</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #ffe6f0; /* rosa claro */
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: #d6336c; /* rosa escuro */
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #f783ac; /* rosa médio */
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ff85c1;
+      color: #000;
+    }
+
+    main {
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .trim {
+      background: #ffffff;
+      max-width: 800px;
+      width: 100%;
+      padding: 50px 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(214, 51, 108, 0.25);
+      text-align: justify;
+    }
+
+    .trim h1 {
+      color: #d6336c;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .trim p {
+      color: #4a0a3e;
+      line-height: 1.6;
+    }
+
+    .trim strong {
+      color: #d6336c;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1><a href="../index.html">HOME</a></h1>
+
+  <nav>
+    <a href="trimestre1.html">I Trim.</a>
+    <a href="trimestre2.html">II Trim.</a>
+    <a href="trimestre3.html">III Trim.</a>
+  </nav>
+</header>
+
+<main>
+  <div class="trim">
+
+    <h1>O CSS</h1>
+
+    <p><strong>1. O que é CSS?</strong></p><br>
+
+    <p>
+      CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).
+      O CSS é uma linguagem usada para dar estilo às páginas Web criadas com HTML.
+      Enquanto o HTML serve para estruturar o conteúdo (textos, imagens, botões),
+      o CSS é responsável pela aparência visual da página.
+    </p><br>
+
+    <p><strong>Exemplos do que o CSS faz:</strong></p><br>
+
+    <p>
+      • Mudar cores dos textos;<br>
+      • Alterar o tamanho das letras;<br>
+      • Definir cores de fundo;<br>
+      • Posicionar elementos na página.
+    </p><br>
+
+    <p><strong>2. Importância do CSS no Desenvolvimento Web</strong></p><br>
+
+    <p>
+      • Melhora a aparência dos sites;<br>
+      • Facilita a leitura do conteúdo;<br>
+      • Separa conteúdo (HTML) do design (CSS);<br>
+      • Facilita manutenção e actualizações;<br>
+      • Melhora a experiência do utilizador.
+    </p><br>
+
+    <p><strong>3. Tipos de Folhas de Estilo CSS</strong></p><br>
+
+    <p><strong>3.1 CSS Inline</strong></p><br>
+
+    <p>
+      O CSS inline é aplicado directamente dentro da tag HTML.<br>
+      Exemplo:<br>
+      &lt;p style="color: blue;"&gt;Este texto é azul&lt;/p&gt;
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Simples e rápido;<br>
+      • Para pequenas alterações;<br>
+      • Não recomendado para páginas grandes.
+    </p><br>
+
+    <p><strong>3.2 CSS Interno (Internal CSS)</strong></p><br>
+
+    <p>
+      O CSS interno é escrito dentro da própria página HTML,
+      usando a tag &lt;style&gt;.
+    </p><br>
+
+    <p>
+      Exemplo:<br>
+      &lt;style&gt;<br>
+      p { color: green; }<br>
+      &lt;/style&gt;
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Organiza melhor que o inline;<br>
+      • Aplica estilo a vários elementos;<br>
+      • Usado quando o estilo é apenas para uma página.
+    </p>
+
+  </div>
+</main>
+
+</body>
+</html>

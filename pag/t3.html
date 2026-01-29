@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Trimestre</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #fff0f6; /* rosa muito claro */
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: #c2255c; /* rosa escuro */
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #f06595; /* rosa médio */
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ff85c1;
+      color: #000;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(194, 37, 92, 0.25);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #c2255c;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #f3a6c4;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: #c2255c;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background: #fff5f9;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1><a href="../index.html">HOME</a></h1>
+
+  <nav>
+    <a href="trimestre1.html">I Trim.</a>
+    <a href="trimestre2.html">II Trim.</a>
+    <a href="trimestre3.html">III Trim.</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Produtos Cadastrados</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaProdutos"></tbody>
+  </table>
+</div>
+
+<script>
+  const tabela = document.getElementById("tabelaProdutos");
+  const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+
+  produtos.forEach(produto => {
+    const linha = document.createElement("tr");
+
+    linha.innerHTML = `
+      <td>${produto.nome}</td>
+      <td>${produto.preco}</td>
+      <td>${produto.quantidade}</td>
+    `;
+
+    tabela.appendChild(linha);
+  });
+</script>
+
+</body>
+</html>
